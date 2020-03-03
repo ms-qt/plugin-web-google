@@ -1,4 +1,0 @@
-/Users/maohuawei/project/app/qt/plugin-web-google/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/maohuawei/project/app/qt/plugin-web-google/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/maohuawei/project/app/qt/plugin-web-google/cmake-build-debug/CMakeFiles/plugin-web-google.dir
-/Users/maohuawei/project/app/qt/plugin-web-google/cmake-build-debug/CMakeFiles/plugin-web-google_autogen.dir
