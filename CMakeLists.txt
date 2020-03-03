@@ -16,10 +16,21 @@ endif (UNIX AND NOT APPLE)
 set(LIB 1)
 
 
+if (WIN32)
+    # 插件输出路径
+    SET(LIBRARY_OUTPUT_PATH D:/deploy/qt/plugins)
+endif (WIN32)
+
+
 if (APPLE)
     SET(LIBRARY_OUTPUT_PATH /Users/maohuawei/project/app/qt/doper-dapp/cmake-build-debug/app.app/Contents/MacOS/plugins)
 endif (APPLE)
 
+
+if (WIN32)
+    include_directories("D:/Local/libs/include")
+    link_directories("D:/Local/libs/lib")
+endif (WIN32)
 
 if (UNIX)
     include_directories("/usr/local/include")
@@ -32,8 +43,8 @@ find_package(Qt5 COMPONENTS Core Qml Quick WebEngine REQUIRED)
 
 set(SRC
         src/plugin-web-google_global.h
-        src/google.cpp
-        src/google.h
+        src/Google.cpp
+        src/Google.h
         )
 
 

@@ -1,13 +1,13 @@
 {
+  "id": "google" ,
+  "name": "谷歌搜索工具",
   "author": "毛华伟",
   "date": "2020/03/03",
-  "name": "谷歌搜索工具",
   "version_name": "dev-laster",
   "version_code": "1",
   "desc": "中文检索引擎",
   "icon_local": "qrc:/images/image_google.png",
   "icon_remotely": "https://... 配置 cdn 地址",
   "force_update": "true",
-  "id": "google" ,
   "independent_window": false
 }
