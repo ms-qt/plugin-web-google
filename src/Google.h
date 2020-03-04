@@ -21,7 +21,7 @@ Q_OBJECT
     Q_PLUGIN_METADATA(IID
                               IAppPluginInterface_iid
                               FILE
-                              "pluginconfig.json")
+                              "mainfest.json")
     Q_INTERFACES(IAppPluginInterface)
 public:
     Google();

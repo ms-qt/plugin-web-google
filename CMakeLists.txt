@@ -62,4 +62,4 @@ add_library(${PROJECT_NAME} SHARED
 target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::Core Qt5::Qml Qt5::Quick Qt5::WebEngine)
 target_compile_definitions(${PROJECT_NAME} PRIVATE PLUGINWEBGOOGLE_LIBRARY)
 target_link_libraries(${PROJECT_NAME} PRIVATE PluginInterface)
-set(pluginconfig.json)
+set(mainfest.json)

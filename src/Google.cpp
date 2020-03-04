@@ -3,15 +3,10 @@
 Google::Google()
 {
     // 关联信号
-    connect(this, SIGNAL(sendMessage(PluginMetaData * )), this,
-            SLOT(receiveMessage(PluginMetaData * )));
+    connect(this, SIGNAL(sendMessage(PluginMetaData *)), this, SLOT(receiveMessage(PluginMetaData *)));
 }
 
-
-Google::~Google()
-{
-
-}
+Google::~Google() {}
 
 void Google::loader()
 {
@@ -28,17 +23,18 @@ void Google::loader()
     // access_token
     // refresh_token
     // ...
-    qJsonObject.insert("data", "{\"access_token\","
-                               "\"refresh_token\","
-                               "\"version\""
-                               "}");
+    qJsonObject.insert(
+        "data",
+        "{\"access_token\","
+        "\"refresh_token\","
+        "\"version\""
+        "}");
 
     PluginMetaData *data = new PluginMetaData();
     QString str = QJsonDocument(qJsonObject).toJson();
     data->setData(&str);
     emit sendMessage(data);
 }
-
 
 void Google::receiveMessage(PluginMetaData *data)
 {
