@@ -1,5 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>qml/web/google.qml</file>
+        <file>qml/plugin/web/google.qml</file>
     </qresource>
 </RCC>

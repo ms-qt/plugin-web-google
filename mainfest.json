@@ -9,5 +9,6 @@
   "icon_local": "qrc:/images/image_google.png",
   "icon_remotely": "https://... 配置 cdn 地址",
   "force_update": "true",
-  "independent_window": false
+  "independent_window": false,
+  "main_qml": "qrc:/qml/plugin/web/google.qml"
 }
